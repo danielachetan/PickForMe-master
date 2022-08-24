@@ -1,0 +1,43 @@
+.bookview-container {
+    /*display: flex;*/
+    justify-content: left;
+  }
+  .bookview {
+  	background-color: #f1fec6;
+    display: flex;
+    justify-content: left;
+    padding: 15px;
+  }
+  /*
+  .bookview-image {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    padding-right: 15px;
+    flex: 5;
+  }
+   */
+  .card-image {
+  	height: 500px;
+  	max-width: 300px;
+  }
+  .bookview-details {
+    font-family: system-ui;
+    padding-left: 15px;
+    flex: 7;
+    color: #1b7670;
+  }
+  .bookview-title h1 {
+    margin-top: 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 10px 0;
+    color: #24c17d;
+  }
+  .bookview-description-cnt h2 {
+    border-bottom: 1px solid;
+    padding-bottom: 4px;
+    color: #24c17d;
+  }

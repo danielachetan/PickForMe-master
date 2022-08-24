@@ -1,0 +1,50 @@
+.header {
+    height: 40px;
+    background-color: #24C17D;
+    color: white;
+    align-items: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.headerName {
+    height: 120%;
+}
+  
+.login-btn:hover{
+  transition: 0.5s ease all;
+}
+
+.login-btn{
+width: 120px;
+border: none;
+background-color: #1B7670;
+font-weight: 700;
+color: white;
+font-size:18px;
+padding: 5px;
+cursor: pointer;
+transition: 0.5s ease all;
+float: right;
+}
+
+.login-form:focus{
+transition: .2s;
+}
+
+.login-btn:active{
+outline-style: none;
+border: none;
+}
+
+.login-label{
+  border: none;
+  background-color: #1B7670;
+  font-weight: 700;
+  color: white;
+  font-size:18px;
+  padding: 5px 0px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+  float: right;
+  }

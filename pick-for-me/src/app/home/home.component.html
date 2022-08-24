@@ -1,0 +1,151 @@
+<app-header></app-header>
+
+<body>
+  <div class="container">
+    <!-- Top banner section starts -->
+    <!-- <div class="top-banner owl-carousel owl-theme" *ngIf="userPreferenceItems.length == 0">
+      <div class="item">
+        <a href="#" class="card"
+          style="background-image: url(https://firebasestorage.googleapis.com/v0/b/pick-for-me-6c9bf.appspot.com/o/movies%2FThe_Lion_King.jpg?alt=media&token=332ddc61-39d3-4bab-8ca2-d65852e1623d);">
+          <div class="card-title-wrapper">
+            <h2 class="card-title">The Lion King</h2>
+            <div class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="item">
+        <a href="#" class="card"
+          style="background-image: url(https://firebasestorage.googleapis.com/v0/b/pick-for-me-6c9bf.appspot.com/o/movies%2FFinding_Nemo.jpg?alt=media&token=1a75805e-8191-4498-966a-6c5a42031bb5);">
+
+          <div class="card-title-wrapper">
+            <h2 class="card-title">The Lion King1</h2>
+            <div class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+
+        </a>
+      </div>
+      <div class="item">
+        <a href="#" class="card" style="background-image: url(../../src/assets/image3.jpeg);">
+
+          <div class="card-title-wrapper">
+            <h2 class="card-title">The Lion King2</h2>
+            <div class="rate">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div> -->
+    <!-- <div class="top-banner owl-carousel owl-theme">
+      <div class="item" *ngFor="let item of userPreferenceItems">
+        <a style="cursor: pointer;" (click)="routeToCard(item.itemType, item.docId)" class="card"
+          [style.background-image]="'url(' + item.photo + ')'">
+          <div class="card-title-wrapper">
+            <h2 class="card-title">{{item.title}}</h2>
+          </div>
+        </a>
+      </div>
+    </div> -->
+    <!-- Top banner section ends -->
+
+
+	<br>
+	<div class="wrapper">
+		<img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDU2Ljk2NiA1Ni45NjYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDU2Ljk2NiA1Ni45NjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMTZweCIgaGVpZ2h0PSIxNnB4Ij4KPHBhdGggZD0iTTU1LjE0Niw1MS44ODdMNDEuNTg4LDM3Ljc4NmMzLjQ4Ni00LjE0NCw1LjM5Ni05LjM1OCw1LjM5Ni0xNC43ODZjMC0xMi42ODItMTAuMzE4LTIzLTIzLTIzcy0yMywxMC4zMTgtMjMsMjMgIHMxMC4zMTgsMjMsMjMsMjNjNC43NjEsMCw5LjI5OC0xLjQzNiwxMy4xNzctNC4xNjJsMTMuNjYxLDE0LjIwOGMwLjU3MSwwLjU5MywxLjMzOSwwLjkyLDIuMTYyLDAuOTIgIGMwLjc3OSwwLDEuNTE4LTAuMjk3LDIuMDc5LTAuODM3QzU2LjI1NSw1NC45ODIsNTYuMjkzLDUzLjA4LDU1LjE0Niw1MS44ODd6IE0yMy45ODQsNmM5LjM3NCwwLDE3LDcuNjI2LDE3LDE3cy03LjYyNiwxNy0xNywxNyAgcy0xNy03LjYyNi0xNy0xN1MxNC42MSw2LDIzLjk4NCw2eiIgZmlsbD0iIzAwMDAwMCIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"/>
+		<input matInput class="search" type="text" placeholder="Search">
+	</div>
+	<br>
+    <!-- category starts-->
+    <div class="category movies">
+      <h2 class="category-title" *ngIf="loginServie.userLoggedInData.length > 0">Recommended for you</h2>
+      <h2 class="category-title" *ngIf="loginServie.userLoggedInData.length == 0">You might like this</h2>
+      <ul class="owl-carousel owl-theme rec-carousel">
+        <li *ngFor="let item of userPreferenceItems">
+          <a>
+            <div (click)="routeToCard(item.itemType,item.docId)" style="cursor: pointer;" class="category-image"
+              [style.background-image]="'url(' + item.photo + ')'">
+            </div>
+            <h2 (click)="routeToCard(item.itemType,item.docId)" class="itemTitle" style="cursor: pointer;">{{item.title}}</h2> 
+            <!-- {{item.itemType}} {{item.genre}} -->
+            <div class="rate" *ngIf="loginServie.userLoggedInData.length > 0">
+              <span class="fa fa-star" style="cursor: pointer;" (click)="submitRating(i, item, item.itemType)"
+                [class.checked]="i <= findRatingOfItem(item.docId)" *ngFor="let i of displayRatings"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- category starts-->
+    <div class="category movies">
+      <h2 class="category-title">Movies</h2>
+      <ul class="owl-carousel owl-theme movies-carousel">
+        <li *ngFor="let movie of movieList">
+          <a>
+            <div (click)="routeToCard('movies',movie.docId)" style="cursor: pointer;" class="category-image"
+              [style.background-image]="'url(' + movie.photo + ')'">
+            </div>
+            <h2 (click)="routeToCard('movies',movie.docId)" class="itemTitle" style="cursor: pointer;">{{movie.title}}</h2>
+            <div class="rate" *ngIf="loginServie.userLoggedInData.length > 0">
+              <span class="fa fa-star" style="cursor: pointer;" (click)="submitRating(i, movie, 'movies')"
+                [class.checked]="i <= findRatingOfItem(movie.docId)" *ngFor="let i of displayRatings"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="category movies">
+      <h2 class="category-title">Books</h2>
+      <ul class="owl-carousel owl-theme books-carousel">
+        <li *ngFor="let book of books">
+          <a>
+            <div (click)="routeToCard('books',book.docId)" style="cursor: pointer;" class="category-image"
+              [style.background-image]="'url(' + book.photo + ')'">
+            </div>
+            <h2 (click)="routeToCard('books',book.docId)" class="itemTitle" style="cursor: pointer;">{{book.title}}</h2>
+            <div class="rate" *ngIf="loginServie.userLoggedInData.length > 0">
+              <span class="fa fa-star" style="cursor: pointer;" (click)="submitRating(i, book, 'books')"
+                [class.checked]="i <= findRatingOfItem(book.docId)" *ngFor="let i of displayRatings"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="category movies">
+      <h2 class="category-title">TV Shows</h2>
+      <ul class="owl-carousel owl-theme shows-carousel">
+        <li *ngFor="let show of shows">
+          <a>
+            <div (click)="routeToCard('tv shows',show.docId)" style="cursor: pointer;" class="category-image"
+              [style.background-image]="'url(' + show.photo + ')'">
+            </div>
+            <h2 (click)="routeToCard('tv shows',show.docId)" class="itemTitle" style="cursor: pointer;">{{show.title}}</h2>
+            <div class="rate" *ngIf="loginServie.userLoggedInData.length > 0">
+              <span class="fa fa-star" style="cursor: pointer;" (click)="submitRating(i, show, 'tv shows')"
+                [class.checked]="i <= findRatingOfItem(show.docId)" *ngFor="let i of displayRatings"></span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>

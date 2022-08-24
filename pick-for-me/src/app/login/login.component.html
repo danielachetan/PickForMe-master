@@ -1,0 +1,28 @@
+<div class="login-body">
+  <div class="get-started" id="login-screen">
+    <p>
+      <span class="login-logo" id="login-logo">
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/pick-for-me-6c9bf.appspot.com/o/logo_small.png?alt=media&token=0ad8855e-6bc8-45a4-b81c-9750f4a8d525"
+          alt="logo">
+      </span>
+    </p>
+
+    <input type="text" *ngIf="!isRegister" [(ngModel)]="loginDetails.userName" name="email" id="email"
+      placeholder="Email " class="login-form">
+    <input type="password" *ngIf="!isRegister" [(ngModel)]="loginDetails.password" name="password" id="password"
+      class="login-form" placeholder="Password">
+
+    <input type="text" *ngIf="isRegister" [(ngModel)]="registerDetails.userName" name="email" id="email"
+      placeholder="Email " class="login-form">
+    <input type="password" *ngIf="isRegister" [(ngModel)]="this.registerDetails.password" name="password" id="password"
+      class="login-form" placeholder="Password">
+    <input type="password" *ngIf="isRegister" [(ngModel)]="this.registerDetails.confirmPassword" name="password"
+      id="password" class="login-form" placeholder="Password">
+
+    <input type="button" (click)="signIn()" *ngIf="!isRegister" value="Login" class="login-btn">
+    <input type="button" (click)="register()" *ngIf="isRegister" value="Register" class="login-btn">
+    <a (click)="switchTo('Register')" *ngIf="!isRegister">Register here</a>
+    <a (click)="switchTo('Login')" *ngIf="isRegister">Login here</a>
+  </div>
+</div>

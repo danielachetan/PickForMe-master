@@ -1,0 +1,77 @@
+<app-header></app-header>
+<div class="bookview-container">
+  <div class="bookview">
+    <div class="bookview-image">
+    	<img class="card-image" src="{{book?.photo}}">
+    </div>
+    <div class="bookview-details">
+      <div *ngIf="item == 'books'">
+        <div class="bookview-title">
+          <h1>{{ book?.title }} ({{ book?.author }})</h1>
+        </div>
+
+        <div style="padding: 5px 0;">
+          <span> Genre: {{ book?.genre }}</span>
+        </div>
+        <div style="padding: 5px 0;">
+          <span>Author: {{ book?.author }}</span>
+        </div>
+        <div style="padding: 5px 0;">
+          <span>No Of Pages: {{ book?.numberOfPages }}</span>
+        </div>
+        <div class="bookview-description-cnt">
+          <h2>Description</h2>
+          <div class="book-description">{{ book?.description }}</div>
+        </div>
+      </div>
+
+      <div *ngIf="item == 'movies'">
+        <div class="bookview-title">
+          <h1>{{ book?.title }} </h1>
+        </div>
+        <div style="padding: 5px 0;">
+          <span> Genre: {{ book?.genre }}</span>
+        </div>
+        <div style="padding: 5px 0;">
+          <span>Actors: {{ book?.actors }}</span>
+        </div>
+        <div style="padding: 5px 0;">
+          <span>Year: {{ book?.year }}</span>
+        </div>
+        <div style="padding: 5px 0;">
+          <span>Duration: {{ book?.duration }}</span>
+        </div>
+        <div class="bookview-description-cnt">
+          <h2>Description</h2>
+          <div class="book-description">{{ book?.description }}</div>
+        </div>
+      </div>
+
+      <div *ngIf="item == 'tv shows'">
+        <div class="bookview-title">
+          <h1>{{ book?.title }} </h1>
+        </div>
+        <div style="padding: 5px 0;">
+          <span> Genre: {{ book?.genre }}</span>
+        </div>
+        <div style="padding: 5px 0;">
+          <span>Actors: {{ book?.actors }}</span>
+        </div>
+        <div style="padding: 5px 0;">
+          <span>Year: {{ book?.year }}</span>
+        </div>
+        <div style="padding: 5px 0;">
+          <span>Total Seasons: {{ book?.numberOfSeasons }}</span>
+        </div>
+        <div style="padding: 5px 0;">
+          <span>Episode Duration: {{ book?.episodeDuration }}</span>
+        </div>
+        <div class="bookview-description-cnt">
+          <h2>Description</h2>
+          <div class="book-description">{{ book?.description }}</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

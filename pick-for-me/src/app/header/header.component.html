@@ -1,0 +1,10 @@
+<div class="header">
+    <img class="headerName" (click)="routeTo('home')"
+        src="https://firebasestorage.googleapis.com/v0/b/pick-for-me-6c9bf.appspot.com/o/logo_white_large.png?alt=media&token=ae8b42cc-5111-4d4f-b25a-2a3160a6d62d">
+    <input *ngIf="loginServie.userLoggedInData.length > 0" type="button" (click)="routeTo('logout')" value="Logout"
+        class="login-btn">
+    <label class="login-label" *ngIf="loginServie.userLoggedInData.length>0">{{loginServie.userLoggedInData}}</label>
+
+    <input *ngIf="loginServie.userLoggedInData.length == 0" type="button" (click)="routeTo('login')" value="Login"
+        class="login-btn">
+</div>
